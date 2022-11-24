@@ -7,7 +7,7 @@ plugins {
 
 group = "io.k-libs"
 version = "0.1.0"
-description = "Some library description."
+description = "Closeable byte stream interface definitions."
 
 repositories {
   mavenCentral()
@@ -46,7 +46,12 @@ kotlin {
   }
 
   sourceSets {
-    val commonMain by getting
+    val commonMain by getting {
+      dependencies {
+        implementation("io.k-libs:closeable:1.0.0")
+        implementation("io.k-libs:io-stream:0.1.0")
+      }
+    }
     val commonTest by getting {
       dependencies {
         implementation(kotlin("test"))
@@ -92,8 +97,8 @@ publishing {
       artifact(javadocJar)
 
       pom {
-        name.set("K-Sample")
-        description.set("Example library definition.")
+        name.set("K-Closeable-IO-Streams")
+        description.set(project.description)
         url.set("https://github.com/k-libs/k-lib-template")
 
         licenses {

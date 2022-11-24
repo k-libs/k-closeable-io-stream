@@ -1,3 +1,1 @@
-
-rootProject.name = "k-lib-template"
-
+rootProject.name = "k-closeable-io-stream"
