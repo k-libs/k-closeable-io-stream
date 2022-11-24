@@ -1,1 +1,1 @@
-rootProject.name = "k-closeable-io-stream"
+rootProject.name = "closeable-io-stream"
