@@ -1,3 +1,6 @@
+import org.jetbrains.dokka.ExternalDocumentationLink
+import org.jetbrains.dokka.gradle.GradleExternalDocumentationLinkBuilder
+
 plugins {
   kotlin("multiplatform") version "1.7.21"
   id("org.jetbrains.dokka") version "1.7.20"
@@ -67,6 +70,17 @@ kotlin {
 }
 
 tasks.dokkaHtml {
+  dokkaSourceSets.configureEach {
+    externalDocumentationLink(
+      "https://k-libs.github.io/k-closeable/dokka/1.0.0",
+      "https://k-libs.github.io/k-closeable/dokka/1.0.0/closeable/package-list"
+    )
+    externalDocumentationLink(
+      "https://k-libs.github.io/k-io-stream/dokka/0.1.0",
+      "https://k-libs.github.io/k-io-stream/dokka/0.1.0/io-stream/package-list"
+    )
+  }
+
   outputDirectory.set(file("docs/dokka/${project.version}"))
 }
 

@@ -1,0 +1,7 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:io.klibs.io////PointingToDeclaration/closeable-io-stream/io.klibs.io/index.html
+$dokka.location:io.klibs.io/CloseableByteReader///PointingToDeclaration/closeable-io-stream/io.klibs.io/-closeable-byte-reader/index.html
+$dokka.location:io.klibs.io/CloseableByteWriter///PointingToDeclaration/closeable-io-stream/io.klibs.io/-closeable-byte-writer/index.html
+io.klibs.io
+

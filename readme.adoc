@@ -17,6 +17,7 @@ Pure Kotlin interface definitions for a closeable byte stream reader and writer.
 
 == Import
 
+.build.gradle.kts
 [source, kotlin, subs="attributes"]
 ----
   implementation("{lib-group}:{lib-name}:{lib-version}")
