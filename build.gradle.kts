@@ -113,7 +113,7 @@ publishing {
       pom {
         name.set("K-Closeable-IO-Streams")
         description.set(project.description)
-        url.set("https://github.com/k-libs/k-lib-template")
+        url.set("https://github.com/k-libs/k-closeable-io-stream")
 
         licenses {
           license {
@@ -131,9 +131,9 @@ publishing {
         }
 
         scm {
-          connection.set("scm:git:git://github.com/k-libs/k-lib-template.git")
-          developerConnection.set("scm:git:ssh://github.com/k-libs/k-lib-template.git")
-          url.set("https://github.com/k-libs/k-lib-template")
+          connection.set("scm:git:git://github.com/k-libs/k-closeable-io-stream.git")
+          developerConnection.set("scm:git:ssh://github.com/k-libs/k-closeable-io-stream.git")
+          url.set("https://github.com/k-libs/k-closeable-io-stream")
         }
       }
     }
